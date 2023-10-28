@@ -1,0 +1,55 @@
+body{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: -100px 0 0 -150px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F7ECE1;
+}
+
+h1{
+  font-weight: 300;
+}
+
+div.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 100px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+button:first-child {
+  background-color: royalblue;
+}
+
+button:nth-child(2) {
+  background-color: hotpink;
+}
+
+@media screen and (max-width: 730px) {
+  .h1{
+    position: absolute;
+    width: 100%;
+  }
+  
+  .button{
+    width: 100%;
+    height: 100%;
+  }
+}
